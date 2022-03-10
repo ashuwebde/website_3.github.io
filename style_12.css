@@ -1,0 +1,913 @@
+
+:root{
+    --hover-color:#f16821;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto',sans-serif;
+    border: none;
+    outline: none;
+}
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+
+}
+/* ------------header section starts-------------- */
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 7%;
+    border-bottom: .1rem solid #555;
+}
+
+.header .logo{
+    color: #000;
+    font-size: 3.5rem;
+    margin-right: auto;
+}
+.header .logo span{
+    color: var(--hover-color);
+}
+
+.header .navbar a{
+    color: #000;
+    margin-right: 2.5rem;
+    font-size: 1.7rem;
+    font-weight: normal;
+    text-transform: capitalize ;
+}
+.header .navbar #active{
+    color: var(--hover-color);
+}
+.header .navbar a:hover{
+    color: var(--hover-color);
+}
+.header .icons i{
+   height: 4.5rem;
+   width: 4.5rem;
+   line-height: 4.5rem;
+   text-align: center;
+   color: #000;
+   background: #ccc;
+   border-radius: 50%;
+   font-size: 1.7rem;
+   cursor: pointer;
+}
+.header .icons i:hover{
+    color: #fff;
+    background: var(--hover-color);
+}
+
+#menu-bars{
+    display: none;
+}
+/* ------------header section ends-------------- */
+
+/* -----------home section starts------------- */
+
+section{
+    padding: 2rem 7%;
+}
+.home{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url('https://www.busfan.be/sites/default/files/migration/2017/06/Shopping-kerst-10.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    padding-top: 8rem;
+    place-items: center;
+}
+
+.home .content{
+    text-align: center;
+    padding: 3rem;
+    background: transparent;
+}
+
+.home .content h3{
+    font-size: 8rem;
+    color: #fff;
+    padding-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.home .content p{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #fff;
+    padding-bottom: 4rem;
+
+}
+.home .content .btn{
+    color: #fff;
+    font-size: 1.5rem;
+    border: .1rem solid #fff;
+    margin:  0 .5rem;
+    padding: 1.5rem 3rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+}
+
+.home .content #btn-2{
+    background: #fff;
+    color: #000;
+}
+
+.home .content #btn-2:hover{
+    background: transparent;
+    color: #fff;
+    transition: .2s linear ;
+}
+
+.home .content #btn-1:hover{
+    background: #fff;
+    color: #000;
+    transition: .2s linear;
+}
+/* -----------home section ends------------- */
+
+/* ----------product section starts--------- */
+
+.product{
+    padding: 100px;
+    text-align: center;
+
+}
+.text{
+    font-size: 1.5rem;
+    padding: .2rem 0;
+    color: #808080;
+    text-transform: uppercase;
+}
+.title{
+    font-size: 4rem;
+    font-weight: bolder;
+    color: #000;
+    padding-bottom: 1rem;
+}
+.para{
+    font-size: 1.5rem;
+    color: #808080;
+    line-height: 1.5;
+    padding-bottom: 4rem;
+}
+
+.product .box-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.product .box-container .box{
+    flex-basis: 33%;
+    padding: 1.2rem;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+.product .box-container .box img{
+    width: 100%;
+}
+
+.product .box-container .box:hover img{
+    transform: scale(1.1);
+    transition: .5s linear;
+}
+.product .box-container .box h3{
+    margin: 1.5rem 0;
+    color: #000;
+    font-size: 2rem;
+    letter-spacing: .1rem;
+    font-weight: normal;
+    cursor: pointer;
+}
+.product .box-container .box h3:hover{
+    color: var(--hover-color);
+}
+.product .box-container .box .icon i{
+    font-size: 1.5rem;
+    color: #000;
+    padding: .5rem 1.5rem;
+    color: var(--hover-color);
+}
+.product .box-container .box .icon i span{
+    margin-left: .5rem;
+    color: #808080;
+    font-weight: normal;
+}
+.product .box-container .box .icon i :last-child{
+    color: #ff0000;
+}
+
+.product .box-container .box .para-1{
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #808080;
+    line-height: 1.5;
+    padding: 2rem 0;
+}
+
+.product .box-container .box #p-btn-1{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    background: #000;
+    border: .1rem solid #000;
+    padding: .5rem 1.5rem;
+    text-transform: uppercase;
+    margin-right: .5rem;
+}
+.product .box-container .box #p-btn-1:hover{
+   color: #000;
+   background: #fff;
+   transition: .2s linear;
+}
+
+.product .box-container .box #p-btn-2{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    background: #fff;
+    border: .1rem solid #000;
+    padding: .5rem 1.5rem;
+    text-transform: uppercase;
+
+}
+
+.product .box-container .box #p-btn-2:hover{
+    color: #fff;
+    background: #000;
+    transition: .2s linear;
+}
+/* ----------product section ends--------- */
+/* ---------notified container starts---- */
+
+   #container{
+       background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+       url('https://media.timeout.com/images/105464350/image.jpg');
+       background-position: center;
+       background-size: cover;
+       background-attachment: fixed;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       text-align: center;
+   }
+
+   #container #box{
+       min-width: 650px;
+       min-height: 400px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+   #container #box .box-1{
+       padding: 0 1rem;
+
+   }
+
+   #container #box .box-1 h2{
+       font-size: 4rem;
+       color: #fff;
+       font-weight: normal;
+       margin-bottom: 30px;
+   }
+   #container #box .box-1 #email{
+       border: .1rem solid #fff;
+       background: transparent;
+       outline: none;
+       width: 450px;
+       padding: 1.5rem;
+       color: #eee;
+   }
+   #container #box .box-1 #email::placeholder{
+       font-size: 1.5rem;
+       color: #eee;
+       font-style: italic;
+   }
+
+   #container #box .box-1 button{
+       border: .1rem solid #fff;
+       outline: none;
+       background: transparent;
+       text-transform: uppercase;
+       font-size: 1.5rem;
+       width: 120px;
+       padding: 1.4rem 2rem;
+       cursor: pointer;
+       color: #eee;
+
+   }
+   #container #box .box-1 button:hover{
+       background: #fff;
+       color: #000;
+       transition: .2s linear;
+   }
+
+   #container #box .box-1 div{
+       padding-bottom: 20px;
+   }
+
+   #container #box .box-1 p{
+       font-size: 1.5rem;
+       font-weight: normal;
+       line-height: 1.5;
+       color: #fff;
+   }
+/* ---------notified container ends---- */
+
+/* ---------feature product section starts-------- */
+
+.feature{
+    padding: 100px;
+    background: #eee;
+}
+
+.feature .text, .feature .title, .feature .para{
+
+     text-align: center;
+}
+.feature .feature-product{
+    background: #fff;
+    padding: 4rem;
+}
+.feature .product-section{
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr);
+    column-gap: 3.5rem;
+}
+
+.feature .product-section .left-col img{
+    width: 100%;
+}
+
+.feature .product-section .right-col{
+    margin-left: 6rem;
+}
+.feature .product-section .right-col .p-title{
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #000;
+}
+
+.feature .product-section .right-col  p{
+    font-weight: normal;
+    color: #808080;
+    font-size: 1.7rem;
+    line-height: 1.7;
+    margin: 2rem;
+}
+.feature .product-section .right-col .price h2{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.feature .product-section .right-col .price p span{
+    margin-right: 1.2rem;
+    text-decoration: line-through;
+    font-size: 1.5rem;
+}
+.feature .product-section .right-col .right-btn button{
+         border: .1rem solid #000;
+         background: none;
+         padding: 1rem 2.5rem;
+         margin-right: .5rem;
+         text-transform: capitalize;
+         font-weight: bold;
+         font-size: 1.5rem;
+         cursor: pointer;
+}
+
+.feature .product-section .right-col .right-btn #view-btn:hover{
+    color: #fff;
+    background: #000;
+    transition: .2s linear;
+}
+
+.feature .product-section .right-col .right-btn #add-btn{
+    background: #000;
+    color: #fff;
+}
+
+.feature .product-section .right-col .right-btn #add-btn:hover{
+    color: #000;
+    background: #fff;
+    transition: .2s linear;
+}
+
+#second{
+    margin-top: 3rem;
+}
+
+
+/* ---------feature product section ends-------- */
+
+/* --------about section starts---------- */
+
+.about{
+    padding: 50px;
+}
+.about .about-container .about-left-col{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.about .about-container .about-left-col .images{
+    flex-basis: 55%;
+    position: relative;
+
+}
+.about .about-container .about-right-col{
+    flex-basis: 30%;
+    margin-left: 4rem;
+}
+.about .about-container .about-left-col .images img{
+    width: 100%;
+}
+
+.about .about-container .about-left-col .images .overlay{
+    position: absolute;
+    bottom: 0;
+    right: -1%;
+    padding: 2rem;
+    background: #46ddb0;
+}
+
+.about .about-container .about-left-col .images .overlay h2{
+    font-size: 4rem;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.about .about-container .about-left-col .images .overlay  p{
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.about .about-container .about-right-col .about-para{
+    font-size: 1.5rem;
+    color: #ccc;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+}
+.about .about-container .about-right-col h2{
+    font-size: 4rem;
+    font-weight: bold;
+    color: #000;
+    text-transform: capitalize;
+    margin: .5rem 0 1.5rem 0;
+}
+
+.about .about-container .about-right-col p{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #808080;
+    margin-bottom: 1.5rem;
+}
+
+.about .about-container .about-right-col .about-btn{
+    font-size: 1.5rem;
+    border: .1rem solid #000;
+    outline: none;
+    padding: 1rem 2rem;
+    background: #000;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.about .about-container .about-right-col .about-btn:hover{
+    color: #000;
+    background: #fff;
+    transition: .3s linear;
+}
+/* --------about section ends---------- */
+
+.team{
+    padding: 50px;
+    text-align: center;
+}
+
+.team .box-container{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.team .box-container .box{
+    flex-basis: 25%;
+    padding: 1.2rem;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.team .box-container .box img{
+    width: 100%;
+}
+
+.team .box-container .box h3{
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+    font-weight: normal;
+    font-size: 2rem;
+    outline-color: #000;
+}
+.team .box-container .box p{
+    font-size: 1.5rem;
+    color: #808080;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.team .box-container .box .para-1{
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+
+.team .box-container .box  .icons i{
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 50%;
+      background: #808080;
+      color: #fff;
+      font-size: 2rem;
+      margin-right: .5rem;
+}
+
+.team .box-container .box  .icons i:hover{
+    background: #000;
+    transition: .2s linear;
+}
+/*---- leadership section ends ------*/
+
+/* -----------blog section starts--- */
+
+.blog{
+    padding: 50px;
+    text-align: center;
+}
+
+.blog .box-container{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.blog .box-container .box{
+    flex-basis: 25%;
+    padding: 1.2rem;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+.blog .box-container .box img{
+    width: 100%;
+}
+.blog .box-container .box h3{
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+    font-weight: normal;
+    font-size: 2rem;
+    color: #000;
+}
+.blog .box-container .box .para-1{
+    font-weight: normal;
+    color: #808080;
+    padding: 1.5rem 0;
+    line-height: 1.5;
+    font-size: 1.5rem;
+
+}
+.blog .box-container .box a{
+    font-size: 2rem;
+    color: #fd4d4d;
+}
+.blog .box-container .box a:hover{
+    color: var(--hover-color);
+}
+/* -----------blog section ends--- */
+/* -----contact section starts----- */
+
+.contact{
+    background-image: url('https://www.busfan.be/sites/default/files/migration/2017/06/Shopping-kerst-10.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.contact form{
+    background: #fff;
+    border-radius: .5rem;
+    margin: 2rem auto;
+    max-width: 70rem;
+    padding: 2rem;
+}
+.contact form h3{
+    font-size: 3rem;
+    color: #000;
+    text-align: center;
+    padding-bottom: 1.5rem;
+    text-transform: capitalize;
+}
+
+
+.contact form .inputBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .inputBox input,
+.contact form textarea{
+    width: 100%;
+    background: #eee;
+    padding: 1rem;
+    margin: .7rem 0;
+    border-radius: .5rem;
+    color: #000;
+    font-size: 1.7rem;
+    border: .1rem solid #000;
+}
+.contact form .inputBox input{
+    width: 49%;
+    border: .1rem solid #000;
+}
+
+/* -----contact section ends----- */
+
+/* ---footer section starts----- */
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.footer .credit{
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: #000;
+    padding: 1rem 0;
+}
+
+.footer .credit span{
+    color: var(--hover-color);
+}
+.footer .follow{
+    padding: 1rem 0;
+
+}
+.footer .follow a{
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    font-size: 1.7rem;
+    background: #000;
+    color: #fff;
+    margin: 0 .1rem;
+    text-align: center;
+
+}
+.footer .follow a:hover{
+    background: var(--hover-color);
+}
+/* ---footer section ends----- */
+
+/* -------------media queries--------------- */
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 1.5rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+    .product{
+        padding: 50px;
+    }
+
+    .product .box-container .box{
+        flex-basis: 50%;
+
+    }
+    .feature{
+        padding: 50px;
+        
+    }
+
+    .feature .product-section{
+        column-gap: 1.5rem;
+    }
+    .feature .product-section .right-btn button{
+        display: inline-block;
+    }
+    .team .box-container .box{
+        flex-basis: 50%;
+    }
+    .blog .box-container .box{
+        flex-basis: 50%;
+    }
+    
+}
+/* for 800px */
+
+@media (max-width: 800px){
+    .feature .feature-product{
+        column-gap: 0;
+    }
+    .feature .product-section .right-col .right-btn button{
+        display: block;
+        margin-bottom: .5rem;
+        width: 100%;
+    }
+}
+ 
+/* --------------for 768px-------------- */
+
+@media (max-width:768px){
+
+   #menu-bars{
+       display: inline-block;
+   }
+
+   .header .navbar{
+       position: absolute;
+       top: 100%;
+       right: 0;
+       border-bottom: .1rem solid #ccc;
+       border-top: .1rem solid #555;
+       background: #fff;
+       width: 40rem;
+       display: none;
+   }
+   .header .navbar a{
+       display: block;
+       padding: 1.5rem;
+       margin: 1.5rem;
+       border-bottom: .1rem solid #808080;
+
+   }
+
+   .header .navbar a:hover{
+       border-bottom: .1rem solid var(--hover-color);
+   }
+   .header .navbar a:last-child{
+       border-bottom: none;
+   }
+
+   .header .navbar.active{
+       display: inline-block;
+   }
+   section{
+       padding: 2rem;
+   }
+
+   .product .box-container .box{
+       flex-basis: 100%;
+   }
+
+   #container #box{
+       min-width: 400px;
+   }
+   #container #box .box-1 #email{
+       display: inline-block;
+       width: 300px;
+       padding: 1.5rem;
+       margin-bottom: 1rem;
+   }
+
+   .feature .product-section{
+       grid-template-columns: 1fr;
+   }
+
+   .feature .product-section .left-col img{
+       padding-bottom: 4rem;
+   }
+   .feature .product-section .right-col{
+       margin-left: 2rem;
+   }
+
+   #second .product-section .left-col img{
+       padding-top: 22px;
+       padding-bottom: 0;
+
+   }
+
+   .about .about-container .about-left-col .images{
+       flex-basis: 100%;
+
+   }
+
+   .about .about-container .about-right-col{
+       flex-basis: 100%;
+       text-align: center;
+       margin-top: 2.5rem;
+   }
+
+   .team{
+       padding: 50px 20px ;
+   }
+
+   .team .box-container .box{
+       flex-basis: 100%;
+   }
+
+   .blog .box-container .box{
+    flex-basis: 100%;
+}
+
+.blog{
+    padding: 50px 20px;
+}
+.footer{
+    flex-flow: column;
+    text-align: center;
+}
+}
+ 
+/* --------for 450px----- */
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+
+    }
+
+    .home .content .btn{
+        margin-bottom: 1rem;
+        display: block;
+    }
+
+    .product{
+        padding: 25px;
+    }
+    #container #box{
+        min-width: 300px;
+
+    }
+    #container #box .box-1 #email{
+        width: 250px;
+
+    }
+    .feature{
+        padding: 25px 10px;
+    }
+    .feature .feature-product{
+        padding: 2rem;
+    }
+    .about{
+        padding: 50px 25px;
+    }
+
+    .about .about-container .about-left-col .images .overlay{
+        padding: .5rem;
+    }
+
+    .about .about-container .about-left-col .images .overlay h2{
+        font-size: 2rem;
+    }
+    .team{
+        padding: 50px 10px ;
+    }
+    .blog{
+        padding: 50px 10px ;
+    }
+    .contact form .inputBox input{
+        width: 100%;
+    }
+}
